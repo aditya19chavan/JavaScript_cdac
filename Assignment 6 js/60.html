@@ -1,16 +1,20 @@
 <input type="text" id="txt">
 
 <button id="btn"> Press me </button>
+<p id="op">Look here </p>
 <script>
         
         function check() {
   
             const value = document.getElementById('txt').value;
+                const output = document.getElementById('op').value;
 
             if (isNaN(value)) {
-                console.log("The it's a string.");
+               // console.log("The it's a string.");
+                    output.text = "It's a string.";
             } else {
-                console.log("It is a number.");
+               // console.log("It is a number.");
+                    output.text = "It's a number";
             }
         }
 
